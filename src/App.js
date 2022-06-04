@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import { ToDoListContextProvider } from './context/ToDoContext';
+import { InputBox } from './components/Input';
+import { AddToDoButton } from './components/AddTodoButton';
+import { ToDoList } from './components/ToDoList';
+import {
+  Button,
+  createTheme,
+  CssBaseline,
+  Stack,
+  ThemeProvider,
+} from '@mui/material';
+import './scss/app.scss';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: `'Noto Sans', sans-serif`,
+    fontWeightRegular: 600,
+  },
+  palette: {
+    mode: 'dark',
+    background: {
+      default: '#95a398',
+    },
+    primary: {
+      main: '#88b895',
+    },
+    secondary: {
+      main: '#88b895',
+    },
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <ToDoListContextProvider>
+          <div className='input-container'>
+            <InputBox /><AddToDoButton />
+            
+          </div>
+          <ToDoList />
+        </ToDoListContextProvider>
+      </ThemeProvider>
     </div>
   );
 }
