@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.2fb59eda.css",
+    "main.js": "/react-gh-pages/static/js/main.a03e42cd.js",
+    "static/js/787.1dbfa3c6.chunk.js": "/react-gh-pages/static/js/787.1dbfa3c6.chunk.js",
+    "static/media/Apple.ttf": "/react-gh-pages/static/media/Apple.df147a19521e98ee86fe.ttf",
+    "index.html": "/react-gh-pages/index.html",
+    "main.2fb59eda.css.map": "/react-gh-pages/static/css/main.2fb59eda.css.map",
+    "main.a03e42cd.js.map": "/react-gh-pages/static/js/main.a03e42cd.js.map",
+    "787.1dbfa3c6.chunk.js.map": "/react-gh-pages/static/js/787.1dbfa3c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fb59eda.css",
+    "static/js/main.a03e42cd.js"
+  ]
+}
